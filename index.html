@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David &amp; Melissa · 15 Years</title>
+  <meta name="description" content="Reliving the wedding day: 15 years of David &amp; Melissa" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="hearts" aria-hidden="true"></canvas>
+
+  <nav class="nav">
+    <a href="#top">Home</a>
+    <a href="#day">The Day</a>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="hero-bg" id="hero-bg-a"></div>
+    <div class="hero-bg" id="hero-bg-b"></div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Celebrating <span id="years">15</span> years of marriage</p>
+      <h1 class="script" id="couple-names">David &amp; Melissa</h1>
+      <p class="hero-date" id="hero-date"></p>
+
+      <div class="counter" id="counter">
+        <div><span id="c-days">0</span><small>days</small></div>
+        <div><span id="c-hours">0</span><small>hours</small></div>
+        <div><span id="c-mins">0</span><small>minutes</small></div>
+        <div><span id="c-secs">0</span><small>seconds</small></div>
+      </div>
+      <p class="counter-label" id="counter-label"></p>
+
+      <div class="hero-actions">
+        <button class="btn" id="relive-btn">▶ Relive the day</button>
+        <button class="btn btn-ghost" id="burst-btn">Send some love 💜</button>
+      </div>
+    </div>
+    <a href="#day" class="scroll-hint" aria-label="Scroll down">↓</a>
+  </header>
+
+  <!-- THE DAY -->
+  <section id="day" class="section">
+    <h2>The Day</h2>
+    <p class="section-sub" id="day-sub">Tap any photo to open it.</p>
+    <div class="chips" id="chapter-chips"></div>
+    <div id="chapters"></div>
+  </section>
+
+  <footer class="footer">
+    <p class="script" id="footer-names"></p>
+    <p>26 November 2011 &nbsp;·&nbsp; here's to the next 15 and beyond.</p>
+  </footer>
+
+  <!-- LIGHTBOX / SLIDESHOW -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lb-progress"><span id="lb-bar"></span></div>
+    <button class="lb-close" id="lb-close" aria-label="Close">×</button>
+    <button class="lb-play" id="lb-play" aria-label="Play or pause slideshow">⏸</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+    <figure id="lb-figure">
+      <img id="lb-img" alt="" />
+      <figcaption>
+        <em id="lb-chapter"></em>
+        <strong id="lb-title"></strong>
+        <span id="lb-caption"></span>
+        <small id="lb-count"></small>
+      </figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
